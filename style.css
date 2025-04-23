@@ -1,7 +1,10 @@
 /* CSS by Kayode Bankole */
-/* Imported Fonts */
+/* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 
+/* CSS REST */
+
+/* ROOT VARIABLES */
 :root {
     --Green: #06A816;
     --Orange: #E75D02;
@@ -9,6 +12,7 @@
     --White: #ffffff; 
   }
 
+  /* MEDIA QUERY (xl) */
 body {
     font-family: 'Habibi', serif;
     font-size: 1.25em;
@@ -28,10 +32,12 @@ h1 {
     font-size: 2.5em;
     text-align: left;
     margin-bottom: 0px;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 1);
 }
 
 h2 {
     font-size: 1.75em;
+    margin: 0;
     
 }
 
@@ -49,11 +55,12 @@ h4{
 }
 
 .libutton{
+  position: relative;
   list-style-type: none;
   border: 2px solid var(--White);
   background-color: var(--Orange);
   margin: 10px;
-  width: 500px;
+  width: 400px;
 }
 
 .topbutton{
@@ -80,29 +87,16 @@ header {
 .produce-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 20px;
-    padding-left: 20px;
+    align-items: center;
 }
-
-div {
-    width: 325px;
-    height: 325px;
-  }
   
 
 .produce-grid > div {
     position: relative;
-    margin: 50px;
+    margin: 40px;
     display: grid;
     justify-items: center;
     align-items: center;
-  }
-  
-  .produce-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
   }
   
   .produce-grid h4 {
@@ -154,4 +148,36 @@ div {
   footer{
     color:var(--Green);
     text-align: center;
+  }
+
+  .header-grid {
+    display: grid;
+    grid-template-columns: 900px 500px 300px;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--Green);
+    color: var(--White);
+  }
+  
+  .header-left {
+    text-align: left;
+  }
+  
+  .header-right {
+    text-align: center;
+  }
+  
+  .nav-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-buttons li {
+    border: 2px solid var(--White);
+    background-color: var(--Orange);
+    padding: 5px;
+    color: var(--White);
+    font-family: 'Habibi', serif;
+    border-radius: 5px;
   }

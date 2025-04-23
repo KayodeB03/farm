@@ -92,7 +92,7 @@ div {
 
 .produce-grid > div {
     position: relative;
-    margin-bottom: 50px;
+    margin: 50px;
     display: grid;
     justify-items: center;
     align-items: center;

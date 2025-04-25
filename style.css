@@ -36,6 +36,14 @@ h1 {
     text-shadow: 3px 2px 0px rgba(0, 0, 0, 1);
 }
 
+.pseudo{
+  font-size: 2.5em;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  text-shadow: 3px 2px 0px rgba(0, 0, 0, 1);
+}
+
 h2 {
     font-size: 1.75em;
     margin: 0;
@@ -201,6 +209,10 @@ header {
     border-radius: 5px;
   }
 
+  .disappear{
+    display: none;
+  }
+
 /* MEDIA QUERY: Small (min-width: 428px) */
 @media (min-width: 428px) {
   .produce-grid {
@@ -272,12 +284,19 @@ header {
    display:none;
   }
 
+  /* Flex layout for header-left */
   .header-left {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start; /* Aligns h1 and p to the left */
     text-align: left;
   }
+
+  .header-left h1 {
+    margin-right: 15px; /* Space between h1 and p */
+  }
+
 
   .header-left section {
     flex: 1;
@@ -285,6 +304,10 @@ header {
 
   .pleft {
     text-align: left;
+  }
+
+  h1{
+    margin-left: 20px;
   }
 
 }
@@ -313,6 +336,9 @@ header {
    .header-left {
     display: block;
   }
+  h1{
+    margin-left: 20px;
+  }
 }
 
 /* MEDIA QUERY: XL (min-width: 1440px) */
@@ -334,5 +360,9 @@ header {
 
   .header-left {
     display: block;
+  }
+
+  h1{
+    margin-left: 20px;
   }
 }
